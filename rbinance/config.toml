@@ -1,5 +1,0 @@
-api_key = "z84Y7EmnekMmhNqRGYmRhDJWxRdpU83J88q0n5VF4frWNqcvEuC8JrMXqtcUhQUY"
-secret_key = "RTRALU4MXVn6QJrSHAPyYdpkRxyyxP9g1UALxsnIJiiLb1pfY34oOk1tOjiwwFN8"
-
-[binance]
-endpoint = "https://testnet.binance.vision"
