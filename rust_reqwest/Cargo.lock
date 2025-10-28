@@ -765,7 +765,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-reqwest"
+name = "rust_reqwest"
 version = "0.1.0"
 dependencies = [
  "reqwest",

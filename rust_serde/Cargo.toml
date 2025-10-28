@@ -1,5 +1,5 @@
 [package]
-name = "rust-serde"
+name = "rust_serde"
 version = "0.1.0"
 edition = "2024"
 description = "A simple Rust library showing how to use Serde"
