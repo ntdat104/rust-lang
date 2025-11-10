@@ -1,9 +1,26 @@
+mod flow_and_conditions;
+mod functions_and_modules;
+mod types_and_variables;
+
 fn main() {
     variables_and_constants();
     data_types();
+    types_and_variables::run();
+    functions_and_modules::run();
+    functions_and_modules::namehelpers::print();
+    flow_and_conditions::run();
 }
 
 fn data_types() {
+    // Unit Types
+    let _x: () = ();
+    println!("{:?}", _x);
+
+    // Type conversion
+    let x: f32 = 255.0;
+    let y: u8 = x as u8 - 5;
+    println!("{:?}", y);
+
     let guess: u32 = "24".parse().expect("Not a number!");
     println!("Parsed number: {guess}");
 
@@ -66,14 +83,33 @@ fn data_types() {
     let tuple: (i32, f64, u8) = (500, 6.4, 1);
     let (x, y, z) = tuple;
     println!("Tuple values: x = {x}, y = {y}, z = {z}");
-    println!("Accessing tuple directly: first = {}, second = {}, third = {}", tuple.0, tuple.1, tuple.2);
+    println!(
+        "Accessing tuple directly: first = {}, second = {}, third = {}",
+        tuple.0, tuple.1, tuple.2
+    );
 
     // The Array Type
     let array: [i32; 5] = [1, 2, 3, 4, 5];
     println!("Array values: {:?}", array);
 
-    let months = ["January", "February", "March", "April", "May", "June", "July",
-              "August", "September", "October", "November", "December"];
+    // Slice
+    let new_array: &[i32] = &array[1..4];
+    println!("{:?}", new_array);
+
+    let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
     println!("Months: {:?}", months);
 
     let a = [1, 2, 3, 4, 5];
