@@ -1,3 +1,4 @@
+mod closure;
 mod data_types;
 mod flow_and_conditions;
 mod functions_and_modules;
@@ -14,4 +15,5 @@ fn main() {
     flow_and_conditions::run_while();
     flow_and_conditions::run_loop();
     flow_and_conditions::run_for_loop();
+    closure::run();
 }
